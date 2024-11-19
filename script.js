@@ -17,7 +17,7 @@ function secondsToMinutesSeconds(seconds){
 
 async function getSongs(folder) {
     currfolder = folder
-    let a = await fetch(`https://spotify-theta-fawn.vercel.app/songs/${folder}/`)
+    let a = await fetch(`https://spotify-theta-fawn.vercel.app/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
